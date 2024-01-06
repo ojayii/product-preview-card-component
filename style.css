@@ -1,0 +1,124 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 0%); }
+.attribution a:hover{
+    color: hsl(0, 13%, 46%);
+}
+body, html {
+    margin: 0;    
+    padding: 0;    
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+}
+.mobimg {
+    width: 90%;
+    max-width: 375px;
+    height: auto;
+    margin-top: 5%;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+.col2{
+    width: 90%;
+    max-width: 375px;
+    border-bottom-right-radius: 13px;
+    border-bottom-left-radius: 13px;
+    background-color:  hsl(0, 0%, 100%);
+    padding-bottom: 8%;
+}
+.p1 {
+    margin: 6%;
+    margin-bottom: ;
+    letter-spacing: 0.6vmax;
+}
+.col2 h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: bolder;
+    font-size: 2.438rem;
+    margin-left: 6%;
+    margin-top: 0;
+}
+.p2 {
+    margin-left: 6%;
+    font-size: 14px;
+    letter-spacing: px;
+    line-height: 190%;
+    width: 87%;
+    margin-top: 0;
+}
+.flexrow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 2vmax;
+}
+.flexrow h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(158, 36%, 37%);
+    margin-right: 2vmax;
+    margin-block: 0;
+}
+.flexrow p {
+    margin: 0;
+    text-decoration: line-through;
+}
+button {
+    width: 88%;
+    margin-inline: 6%;
+    border-radius: 6px;
+    height: 7vmax;
+    border: none;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmax;
+    font-weight: bold;
+}
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
+@media(max-width: 700px){
+    .deskimg {
+        display: none;
+    }
+}
+@media(min-width: 701px){
+    .mobimg {
+        display: none;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .deskimg{
+        width: 300px;
+        height: 450px;
+        border-bottom-left-radius: 11px;
+        border-top-left-radius: 11px;
+    }
+    .col2{
+        width: 300px;
+        height: 450px;
+        box-sizing: border-box;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 11px;
+        border-bottom-right-radius: 11px;
+    }
+    .col2 h1 {
+        font-size: 2rem;
+        max-width: 80%;
+    }
+    button {
+        height: 3.2rem;
+    }
+}

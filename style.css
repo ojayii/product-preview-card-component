@@ -63,7 +63,7 @@ body, html {
     margin-bottom: clamp(1rem, 4vw, 2rem);
     gap: 2%;
 }
-.flexrow h1 {
+.flexrow h2 {
     font-family: 'Montserrat', sans-serif;
     color: hsl(158, 36%, 37%);
     margin-block: 0;

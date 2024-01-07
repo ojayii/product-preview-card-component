@@ -17,6 +17,7 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: hsl(30, 38%, 92%);
+    padding-bottom: 1.5rem;
 }
 .mobimg {
     width: 90%;
@@ -58,12 +59,13 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 2vmax;
+    padding-left: 6%;
+    margin-bottom: clamp(1rem, 4vw, 2rem);
+    gap: 2%;
 }
 .flexrow h1 {
     font-family: 'Montserrat', sans-serif;
     color: hsl(158, 36%, 37%);
-    margin-right: 2vmax;
     margin-block: 0;
 }
 .flexrow p {
